@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+
+body{
+    
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.header{display: flex;
+    justify-content: center;
+align-items: center;
+text-align: center;
+flex-direction: column;
+height:250px;
+color:rebeccapurple ;
+}
+.parent{
+border: 6px solid grey;
+width :120px;
+text-align: center;
+justify-content: center;
+}
+.box{
+    border: 2px solid yellow;
+    background-color:goldenrod;
+    color: azure;
+    margin:10px;
+    height:50px;
+    width: 80px;
+    border-radius: 20px;
+    animation-name:muneer;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count:infinite ;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}
+   @keyframes muneer{
+
+    0%{
+        transform:translateX(0)rotate(0) ;
+    }
+    25%{transform:translateX(100px)rotate(90deg)
+    
+   }
+   50%{
+    transform: translateY(100px) rotate(180deg);
+   }
+75%{
+    transform: translateX(-100px) rotate(270deg);
+
+}100%{
+    transform: translate(100px) rotate(350deg);
+}
+   }
+</style>
+  
+<body>
+    <div class="header">
+        <h1>Salyani Mass It Program</h1>
+        <h2>Muneer ahmed chachar </h2>
+        <h1>My Topic :- Animation</h1>
+
+    </div>
+    <div class="parent">
+        <div class="box">HOME</div>
+        <div class="box">BIKE</div>
+        <div class="box">ROAD</div>
+    </div>
+</body>
+</html>
